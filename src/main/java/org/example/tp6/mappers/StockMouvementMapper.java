@@ -13,7 +13,7 @@ import java.time.LocalDate;
 
 @Mapper
 public interface StockMouvementMapper {
-    StockMouvementMapper stockMovMapper = Mappers.getMapper(StockMouvementMapper.class);
+//    StockMouvementMapper stockMovMapper = Mappers.getMapper(StockMouvementMapper.class);
 
     StockMouvementDto toStockMouvementDto(StockMouvement stockMouvement);
     StockMouvement toStockMouvement(StockMouvementDto stockMouvementDto);

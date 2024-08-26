@@ -109,6 +109,7 @@ public class GestionMedicamentServiceImpl implements IGestionMedicamentService {
         if (medicament.getQuantiteStock()< medicament.getSeuilMinimum()){
             alerte(medicament);
         }
+
         StockMouvement stockMouvement = StockMouvement.builder()
                 .type(stockMouvementDto.getType())
                 .medicament(medicament)
@@ -126,6 +127,6 @@ public class GestionMedicamentServiceImpl implements IGestionMedicamentService {
                 " est inférieur au seuil minimum de " + medicament.getSeuilMinimum() +
                 " unités. Quantité actuelle : " + medicament.getQuantiteStock();
 
-        emailService.sendEmail("hafavaj318@polatrix.com", subject, text);
+        emailService.sendEmail("lasoror798@hapied.com", subject, text);
     }
 }
